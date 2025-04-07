@@ -1,0 +1,13 @@
+<body> 
+    <p id="demo"></p> 
+    <script src="codigo.js"></script> 
+    <script> 
+    var parser, xmlDoc; 
+     
+    parser = new DOMParser(); 
+    xmlDoc = parser.parseFromString(text,"text/xml"); 
+    document.getElementById("demo").innerHTML = 
+    xmlDoc.getElementsByTagName("author")[0].childNodes[0].nodeValue;  </script> 
+   </body> 
+
+   
